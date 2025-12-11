@@ -1,75 +1,75 @@
-# React + TypeScript + Vite
+# RentRide - Premium Vehicle Rental System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![RentRide Banner](public/logo.png)
 
-Currently, two official plugins are available:
+**RentRide** is a modern, full-stack vehicle rental application designed to provide a seamless and premium booking experience. Built with performance and user experience in mind, it features a sleek, responsive design, real-time vehicle availability, and a secure authentication system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **🚗 Extensive Fleet**: Browse a wide range of vehicles with detailed specifications and high-quality imagery.
+- **🔐 Secure Authentication**: Robust user registration and login system with role-based access control.
+- **📅 Easy Booking**: Intuitive booking flow with real-time availability checks.
+- **📱 Fully Responsive**: Optimized for all devices, from desktops to mobile phones.
+- **⚡ High Performance**: Powered by Vite and React for lightning-fast load times and smooth transitions.
+- **🎨 Modern UI/UX**: Aesthetic design with smooth animations (Framer Motion) and a polished interface.
+- **👤 User Dashboard**: Manage bookings and view profile details.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Tech Stack
 
-Note: This will impact Vite dev & build performances.
+### Frontend
 
-## Expanding the ESLint configuration
+- **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Routing**: [React Router DOM](https://reactrouter.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Backend (API)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Runtime**: Node.js
+- **Framework**: Express.js
+- **Database**: MongoDB (via Mongoose)
+- **Authentication**: JWT (JSON Web Tokens)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Follow these instructions to get the project up and running on your local machine.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Prerequisites
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Node.js (v16 or higher)
+- npm or yarn
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone <repository-url>
+    cd vehicle_rental_project
+    ```
+
+2.  **Setup Backend:**
+
+    ```bash
+    cd vehicle_rental_system_api
+    npm install
+    # Create .env file and add necessary variables (PORT, MONGO_URI, JWT_SECRET)
+    npm run dev
+    ```
+
+3.  **Setup Frontend:**
+
+    ```bash
+    cd ../vehicle_rental_system_app
+    npm install
+    npm run dev
+    ```
+
+4.  **Access the Application:**
+    Open your browser and navigate to `http://localhost:5173`.
+
+## License
+
+This project is licensed under the MIT License.
