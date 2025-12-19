@@ -46,7 +46,7 @@ export default function Layout() {
               {/* <Car className="h-5 w-5 text-white" /> */}
               <img
                 src="/logo.png"
-                alt="RentRide Logo"
+                alt="RideTheRent Logo"
                 className="h-5 w-5 object-contain"
               />
             </div>
@@ -203,11 +203,11 @@ export default function Layout() {
               <Car className="h-4 w-4 text-white" />
             </div>
             <span className="font-bold text-lg text-gray-900 dark:text-white">
-              RentRide
+              RideTheRent
             </span>
           </div>
           <div className="text-sm text-gray-500">
-            © {new Date().getFullYear()} RentRide Inc. All rights reserved.
+            © {new Date().getFullYear()} RideTheRent Inc. All rights reserved.
           </div>
           <div className="flex gap-6">
             <a

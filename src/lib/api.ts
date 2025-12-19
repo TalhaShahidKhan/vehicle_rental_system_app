@@ -12,7 +12,7 @@ export const api = axios.create({
 
 api.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem("rat_token"); // RentRide Auth Token
+    const token = localStorage.getItem("rat_token"); // RideTheRent Auth Token
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }

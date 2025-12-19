@@ -57,7 +57,7 @@ export default function Register() {
             Create Account
           </h2>
           <p className="text-gray-500 mt-2">
-            Join RentRide to start your journey
+            Join RideTheRent to start your journey
           </p>
         </div>
 

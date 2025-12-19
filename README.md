@@ -1,8 +1,8 @@
-# RentRide - Premium Vehicle Rental System
+# RideTheRent - Premium Vehicle Rental System
 
-![RentRide Banner](public/logo.png)
+![RideTheRent Banner](public/logo.png)
 
-**RentRide** is a modern, full-stack vehicle rental application designed to provide a seamless and premium booking experience. Built with performance and user experience in mind, it features a sleek, responsive design, real-time vehicle availability, and a secure authentication system.
+**RideTheRent** is a modern, full-stack vehicle rental application designed to provide a seamless and premium booking experience. Built with performance and user experience in mind, it features a sleek, responsive design, real-time vehicle availability, and a secure authentication system.
 
 ## Features
 

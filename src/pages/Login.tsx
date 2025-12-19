@@ -46,7 +46,9 @@ export default function Login() {
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
             Welcome Back
           </h2>
-          <p className="text-gray-500 mt-2">Sign in to continue to RentRide</p>
+          <p className="text-gray-500 mt-2">
+            Sign in to continue to RideTheRent
+          </p>
         </div>
 
         {message && (

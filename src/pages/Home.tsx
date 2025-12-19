@@ -46,8 +46,8 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-gray-500 dark:text-gray-400 max-w-2xl"
             >
-              Experience the freedom of the road with RentRide. Premium fleet,
-              transparent pricing, and 24/7 support.
+              Experience the freedom of the road with RideTheRent. Premium
+              fleet, transparent pricing, and 24/7 support.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -93,7 +93,7 @@ export default function Home() {
       {/* Features */}
       <section className="py-12">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Why choose RentRide?</h2>
+          <h2 className="text-3xl font-bold mb-4">Why choose RideTheRent?</h2>
           <p className="text-gray-500">
             We make renting a car as easy as ordering a pizza.
           </p>
