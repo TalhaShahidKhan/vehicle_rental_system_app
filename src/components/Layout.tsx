@@ -51,7 +51,7 @@ export default function Layout() {
               />
             </div>
             <span className="font-bold text-xl tracking-tight text-gray-900 dark:text-white">
-              RentRide
+              RideTheRent{" "}
             </span>
           </Link>
 
