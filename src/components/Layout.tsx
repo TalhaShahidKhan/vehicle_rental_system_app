@@ -19,6 +19,9 @@ export default function Layout() {
 
   if (user) {
     navLinks.push({ name: "Dashboard", href: "/profile" });
+    if (user.role === "admin") {
+      navLinks.push({ name: "Admin", href: "/admin" });
+    }
   }
 
   const pageVariants = {

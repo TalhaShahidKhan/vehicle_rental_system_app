@@ -2,9 +2,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthProvider } from "./context/AuthContext";
+import AdminDashboard from "./pages/admin/AdminDashboard";
 import Booking from "./pages/Booking";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import NotFound from "./pages/NotFound";
 import Profile from "./pages/Profile";
 import Register from "./pages/Register";
 import VehicleDetails from "./pages/VehicleDetails";
@@ -39,6 +41,19 @@ function App() {
                 </ProtectedRoute>
               }
             />
+
+            {/* Admin Routes */}
+            <Route
+              path="admin"
+              element={
+                <ProtectedRoute role="admin">
+                  <AdminDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* 404 Route */}
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </AuthProvider>
